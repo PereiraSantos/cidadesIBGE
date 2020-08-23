@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Estado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/Estado"
+        android:textColor="#3F51B5"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/estado"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:hint="Digite o Id"
+        android:textColorHint="#928A8A"
+        android:backgroundTint="#3F51B5"
+        android:layout_below="@id/Estado"
+        android:textColor="#3F51B5"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buscar"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/Buscar"
+        android:onClick="carregarMunicipios"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/salvar"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/Salvar"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:layout_below="@id/buscar"
+        android:textStyle="bold"
+        android:onClick="validaEstado"
+        />
+
+    <Button
+        android:id="@+id/Lista"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/Lista"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:layout_below="@id/buscar"
+        android:textStyle="bold"
+        android:onClick="listarCidade"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/salvar">
+        <ListView
+            android:id="@+id/lstItens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Recaregar"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/CaregarEstado"
+        android:textColor="#8C8990"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="recarregarEstado"/>
+
+
+</RelativeLayout>

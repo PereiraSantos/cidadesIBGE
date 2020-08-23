@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">cidades IBGE</string>
+    <string name="Estado">Estado</string>
+    <string name="Buscar">Buscar</string>
+    <string name="Salvar">salvar</string>
+    <string name="Lista">Lista</string>
+    <string name="Id">Id</string>
+    <string name="Estados">Estados</string>
+    <string name="CaregarEstado">Carregar Estado</string>
+</resources>
